@@ -49,4 +49,13 @@ Standard – allows you to access any of your archived objects within several ho
 Bulk – Glacier’s lowest-cost retrieval option, enabling you to retrieve large amounts, even petabytes, of data inexpensively in a day. Bulk retrievals typically complete within 5–12 hours.
 For S3 Standard, S3 Standard-IA, and Glacier storage classes, your objects are automatically stored across multiple devices spanning a minimum of three Availability Zones.
 ```
+#### cloud front to access s3 private data
+```
+Many companies that distribute content over the internet want to restrict access to documents, business data, media streams, or content that is intended for selected users, for example, users who have paid a fee. To securely serve this private content by using CloudFront, you can do the following:
 
+– Require that your users access your private content by using special CloudFront signed URLs or signed cookies.
+
+– Require that your users access your content by using CloudFront URLs, not URLs that access content directly on the origin server (for example, Amazon S3 or a private HTTP server). Requiring CloudFront URLs isn’t necessary, but we recommend it to prevent users from bypassing the restrictions that you specify in signed URLs or signed cookies.
+
+CloudFront signed URLs and signed cookies provide the same basic functionality: they allow you to control who can access your content.
+```
